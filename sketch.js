@@ -81,6 +81,11 @@ function draw() {
       gameState = END;
       
        }
+    
+    if(score === 99999){
+      gameState = END;
+        }
+    
     spawnClouds();
   spawnObstacles();
     score = score + Math.round(getFrameRate()/60);
